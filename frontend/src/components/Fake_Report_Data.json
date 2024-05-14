@@ -1,0 +1,67 @@
+[
+    {
+        "reportID": 41495780,
+        "Title": "DevTools doesn't seem to file paths in sourceMappingUIRL comments",
+        "Severity": "S4",
+        "Priority": "P3",
+        "Status": "Obsolete",
+        "AttackVector": "Local",
+        "AttackVectorStr": "This bug loads a local file for the source map",
+        "MemoryAccessType": "Out-of-bound Read",
+        "MemoryAccessTypeStr": "Threat emerged via six-cylinder RAM exploration",
+        "ContextType": "Privelaged",
+        "ContextTypeStr": "Access to privileged|signature permissions."
+    },
+    {
+        "reportID": 41492343,
+        "Title": "Manipulation of DevTools network packets increases load time",
+        "Severity": "S3",
+        "Priority": "P2",
+        "Status": "Fixed",
+        "AttackVector": "Remote",
+        "AttackVectorStr": "This bug is triggererd through reading an email",
+        "MemoryAccessType": "Out-of-bound Write",
+        "MemoryAccessTypeStr": "Operating system and RAM combination was explored",
+        "ContextType": "Trusted Execution Environment (TEE)",
+        "ContextTypeStr": "Protected virtual machine operation pkVM"
+    },
+    {
+        "reportID": 41293390,
+        "Title": "Operational execution failure within DevTools file hosting and deletion",
+        "Severity": "S2",
+        "Priority": "P1",
+        "Status": "Fixed",
+        "AttackVector": "Remote",
+        "AttackVectorStr": "This bug loads a local file for the source map",
+        "MemoryAccessType": "Out-of-bound Write",
+        "MemoryAccessTypeStr": "Threat emerged via six-cylinder RAM exploration",
+        "ContextType": "Secure Enclave/Secure Element",
+        "ContextTypeStr": "Access granted with Android Devices with the Titan-M chip"
+    },
+    {
+        "reportID": 44837376,
+        "Title": "Errors when trying to compile elements in DevTools",
+        "Severity": "S2",
+        "Priority": "P1",
+        "Status": "Fixed",
+        "AttackVector": "Remote",
+        "AttackVectorStr": "This bug loads a local file for the source map",
+        "MemoryAccessType": "Out-of-bound Read",
+        "MemoryAccessTypeStr": "Threat emerged via six-cylinder RAM exploration",
+        "ContextType": "Unprivileged",
+        "ContextTypeStr": "The application ran in an SELinux domain with untrusted_app_all attribute"
+    },
+    {
+        "reportID": 44409638,
+        "Title": "XSS by exploiting CSRF vulnerability",
+        "Severity": "S2",
+        "Priority": "P1",
+        "Status": "Fixed",
+        "AttackVector": "Remote",
+        "AttackVectorStr": "This bug loads a local file for the source map",
+        "MemoryAccessType": "Out-of-bound Read",
+        "MemoryAccessTypeStr": "Threat emerged via six-cylinder RAM exploration",
+        "ContextType": "Unprivileged",
+        "ContextTypeStr": "The application ran in an SELinux domain with untrusted_app_all attribute"
+    }
+]
