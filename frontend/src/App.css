@@ -1,0 +1,1153 @@
+@import url("./font.css");
+
+/* Background color */
+body {
+    margin: 0;
+    padding: 0;
+    background: #191919;
+    font-family: "ProductSans-Light", Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Code For Horizonal-Line. That <!---------> thing */
+.horizontal-line {
+    color: #474747;
+    display: flex;
+    align-items: center;
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent 1px,
+        #191919 1px,
+        #191919 2px
+    );
+    height: 1px; /* Adjust the height as needed */
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+.horizontal-line span {
+    flex: 1;
+}
+
+.start-symbol,
+.end-symbol {
+    margin: 0 5px; /* Adjust the margin as needed */
+}
+
+@media (min-width: 600px) {
+    .horizontal-line {
+        justify-content: space-between;
+    }
+
+    .horizontal-line span {
+        flex: auto; /* Allow dashes to fill remaining space */
+    }
+}
+
+/* Form Header - the part that is sticky to the top */
+.FormHeader {
+    background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* For google product form words at top left corner */
+.FormHeader h2 {
+    font-size: 18px;
+    font-family: "ProductSans-Light", Arial, sans-serif;
+    color: #ffffffde;
+}
+
+/* Applies margins to the contents */
+.FormBody {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 120px;
+    display: flex;
+}
+
+/* Classes that control Icons */
+.CloseIcon {
+    color: #ffffff;
+}
+
+/* Product Sans font added to all text */
+h1,
+h2,
+h3 {
+    color: #ffffff;
+    font-family: "ProductSans-Light", Arial, sans-serif;
+    font-weight: 300;
+}
+
+/* code specified for h3 */
+h3 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.TheProblemForm {
+    width: 800px;
+}
+
+/* Sizing for the form prompts */
+.TheProblemForm h1 {
+    font-size: 44px;
+}
+
+.TheProblemForm h2 {
+    font-size: 32px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* Markdown section */
+.MarkdownTags {
+    display: flex;
+}
+
+.MarkdownTags h3 {
+    font-size: 14px;
+    background-color: #202124;
+    width: fit-content;
+    padding-top: 0.0625rem;
+    padding-right: 0.25rem;
+    padding-bottom: 0.0625rem;
+    padding-left: 0.25rem;
+    margin-right: 10px;
+}
+
+.MarkdownTags .HyperLink,
+.SimilarityScoreHeader .HyperLink {
+    background-color: #191919;
+    text-decoration: underline;
+    color: #4285f4;
+}
+
+.MarkdownTags .HyperLink:hover,
+.SimilarityScoreHeader .HyperLink:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Buttons */
+.ButtonSet {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+button {
+    width: 135px;
+    height: 54px;
+    background-color: #202124;
+    border-radius: 0px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 16px;
+    font-family: "ProductSans-Regular", Arial, sans-serif;
+    letter-spacing: 0.09375rem;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #202124;
+    cursor: pointer;
+}
+
+/*  */
+.TheProblemForm .UploadSection {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/* Upload button */
+.UploadButton {
+    width: 212px;
+    height: 86px;
+    background-color: #222222;
+    border-bottom: 1px solid #686868;
+    border-radius: 4px 4px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.material-icons {
+    padding-right: 4px;
+}
+
+.UploadButton .material-icons {
+    font-size: 14px;
+}
+
+.UploadButton button {
+    width: 180px;
+    margin-right: 0px;
+}
+
+.UploadButton:hover {
+    background-color: #323232;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Code for Text Area */
+.TextAreaContainer {
+    background-color: #202124;
+}
+
+.TabContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .TabContainer {
+        flex-direction: column;
+    }
+}
+
+.Column {
+    flex: 1;
+    text-align: center;
+}
+
+.Column p {
+    font-family: "RobotoMono-Light", Arial, sans-serif;
+    color: #686868;
+    font-size: 14px;
+}
+
+.Active {
+    border-bottom: 2px solid #4285f4;
+}
+
+.Active p {
+    color: #4285f4;
+}
+
+textarea {
+    width: fill;
+    min-height: 200px;
+    background-color: #202124;
+    border: 1px solid #202124;
+    border-bottom: 1px solid #686868;
+    color: #ffffffde;
+    padding: 20px;
+    font-size: 18px;
+    font-family: "ProductSans-Light", Arial, sans-serif;
+}
+
+textarea:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #4285f4;
+}
+
+/* Side Progress List Styles */
+.SideCheckList {
+    width: 400px;
+    /* margin-left: 32px; */
+    position: fixed;
+    right: 90px;
+    background-color: #191919;
+}
+
+.ListHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #bbbbbb;
+    border-bottom: 0.5px solid #474747;
+}
+
+.ListHeader h3 {
+    font-family: "RobotoMono-Light", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.ProgressCheck .material-icons {
+    font-size: 20px;
+}
+
+.ListItem {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #474747;
+}
+
+.ListItem h4 {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.CheckBox {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #4285f4;
+    margin-right: 20px;
+}
+
+.Filled {
+    background-color: #4285f4;
+}
+
+.NotThereYet {
+    border: 1px solid #474747;
+}
+
+.SectionChecks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.SectionChecks .material-icons {
+    color: #ffffff;
+    padding-right: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+.SimilarityScoreHeader {
+    align-items: start;
+    padding-bottom: 24px;
+}
+
+.SimilarityScoreHeader h4 {
+    font-size: 14px;
+    margin-top: 14px;
+    color: #ffffff;
+}
+
+.SimilarityScoreTitleAndHelp {
+    display: flex;
+    align-items: center;
+}
+
+.SimilarityScoreTitleAndHelp .material-icons {
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+.SimilarityScoreTitleAndHelp .material-icons:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.SimilarityScoreHeader .HyperLink {
+    margin-top: 0;
+}
+
+/* Similarity Score PopUp */
+.SimilarityScorePopUp {
+    position: fixed;
+    width: 400px;
+    display: flex;
+    height: 80px;
+    background-color: #222222;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    top: 100px;
+}
+
+.SimilarityScorePopUp h3 {
+    font-family: "RobotoMono-SemiBold", Arial, sans-serif;
+    color: white;
+    padding-bottom: 0px;
+}
+
+.SimilarityScorePopUp h4 {
+    font-size: 14px;
+    color: white;
+    margin-top: 0px;
+}
+
+.ColorSign {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px 0px 0px 4px;
+    margin-right: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignGreen {
+    background-color: #90d24f;
+}
+
+.SignYellow {
+    background-color: #d8d14e;
+}
+
+.SignOrange {
+    background-color: #ef6a20;
+}
+
+.SignRed {
+    background-color: #da0063;
+}
+
+.ColorSign .material-icons {
+    font-size: 48px;
+    color: white;
+}
+
+.SimilarityScorePopUp .CloseIcon {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.SimilarityScorePopUp .CloseIcon .material-icons {
+    font-size: 20px;
+    color: white;
+}
+
+.FadeInRight {
+    animation: fadeInRight 1s ease backwards;
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translate(100px, 0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+}
+
+/* Report Table Styles */
+.backgroundForPopup {
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+}
+
+.reportTablePopUp {
+    width: 80%;
+    background-color: #121212;
+    border: 1px solid #898888;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.pagination {
+    background-color: #202124;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #898888;
+    border-bottom: 1px solid #898888;
+}
+
+.pagination p {
+    margin: 0px;
+    color: white;
+    padding-right: 8px;
+}
+
+.nextAvailable {
+    color: white;
+}
+
+.pageNav {
+    display: flex;
+    align-items: center;
+}
+
+.pageNav .material-icons {
+    padding-right: 0px;
+}
+
+.reportRow {
+    color: #ffffff;
+}
+
+.reportRowContainer {
+    text-decoration: none;
+}
+
+.reportRow,
+.headingsContainer {
+    display: flex;
+    flex-direction: horizontal;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: start;
+    border-bottom: 1px solid #898888;
+    height: fit-content;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 5rem;
+}
+
+.reportRow:hover {
+    background-color: #323232;
+    transition: 0.3s ease-out;
+}
+
+.reportPercent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: #444444;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+}
+
+.reportPercentContainer {
+    flex: 0.25;
+}
+
+.reportTitle {
+    font-size: 14px;
+}
+
+.reportPill {
+    display: flex;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    font-size: 14px;
+}
+
+.titlePillContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.reportValue {
+    flex: 1;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Report Comparison Styles */
+
+.popupControls {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.goBack a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.goBack a:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.goBack h4 {
+    font-size: 14px;
+}
+
+.view-and-export-container .export-btn {
+    width: 54px !important;
+    height: 54px;
+}
+
+.export-btn .material-icons {
+    padding-right: 0px;
+}
+
+.view-and-export-container {
+    display: flex;
+}
+
+.singleReportComparisonBackground {
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+}
+
+.reportComparisonPopup {
+    width: 80%;
+    background-color: #121212;
+    border: 1px solid #898888;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.totalPercent {
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+}
+
+.totalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.valueHeading {
+    font-family: "RobotoMono-Medium", Arial, sans-serif;
+    font-size: 16px;
+    flex: 1;
+    margin-bottom: 8px;
+}
+
+.tableOverview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tableHeader .material-icons {
+    padding-right: 0px;
+}
+
+.tableOverview h1 {
+    font-size: 44px;
+    margin-top: 0px;
+}
+
+.tableOverview p {
+    max-width: 80%;
+    margin-bottom: 0px;
+}
+
+.reportMain {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.reportMain .CloseIcon .material-icons {
+    padding-right: 0px;
+}
+
+.headerContainer {
+    display: flex;
+}
+
+.singleReportMain .tableOverview {
+    height: 198.5px;
+    justify-content: space-between;
+}
+
+.fieldComparisonInfo {
+    display: flex;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: white;
+}
+
+.fieldComparison {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    margin: 2% auto;
+    /* width: 75%; */
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: #202124;
+}
+
+.fieldDescription h1 {
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+.fieldDescription text {
+    font-family: "RobotoMono-Light", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.fieldDescription {
+    padding-right: 10%;
+}
+
+.reportsContainer {
+    display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.comparedReport {
+    padding-bottom: 3%;
+    width: 50%;
+    margin-right: 3%;
+}
+
+.comparedReport text {
+    line-height: 28px;
+}
+
+.submittedReport {
+    border-right: 0.5px solid white;
+    padding-right: 3%;
+}
+
+.historicalReport {
+    margin-right: 0%;
+}
+
+.singleReportComparison {
+    margin: auto;
+}
+
+.singleReportComparison .totalContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.singleReportComparison .tableOverview h1 {
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.singleReportComparison .horizontal-line {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.singleReportComparison .tableOverview button {
+    width: 150px;
+}
+
+.singleReportComparison .reportMain {
+    align-items: start;
+}
+
+.attributeKeyContainer {
+    display: flex;
+    background-color: #202124;
+    border: 1px solid white;
+    width: fit-content;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 120px;
+    margin-left: 5rem;
+    gap: 32px;
+}
+
+.attributeKeyContainer .keyTitle {
+    font-family: "RobotoMono-Light", Arial, sans-serif;
+}
+
+.attributeKeyContainer p {
+    font-size: 14px;
+}
+
+.keyTitle {
+    margin: 0px;
+}
+
+.keyItem {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.keyItem p {
+    color: white;
+    margin: 0px;
+}
+
+.Dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.Pink {
+    background-color: #db6eaf;
+}
+
+.Blue {
+    background-color: #4285f4;
+}
+
+.Green {
+    background-color: #53c9b4;
+}
+
+.blueHighlight {
+    background-color: rgba(66, 133, 244, 0.4);
+    border-bottom: 2px solid #4285F4;
+    color: white;
+    font-family: "ProductSans-Bold";
+}
+
+.pinkHighlight {
+    background-color: rgba(219, 110, 175, 0.4);
+    border-bottom: 2px solid #DB6EAF;
+    color: white;
+    font-family: "ProductSans-Bold";
+}
+
+.greenHighlight {
+    background-color: rgba(83, 201, 180, 0.4);
+    border-bottom: 2px solid #53C9B4;
+    color: white;
+    font-family: "ProductSans-Bold";
+}
+
+
+.PlaceholderBlurb {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ToolTip CSS From Vitor Paladini*/
+/* Source: https://paladini.dev/posts/how-to-make-an-extremely-reusable-tooltip-component-with-react--and-nothing-else/ */
+/* Custom properties */
+:root {
+    --tooltip-text-color: white;
+    --tooltip-background-color: black;
+    --tooltip-margin: 20px;
+    --tooltip-arrow-size: 6px;
+    --tooltip-width: 140px; 
+  }
+  
+  /* Wrapping */
+  .Tooltip-Wrapper {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Absolute positioning */
+  .Tooltip-Tip {
+    position: absolute;
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    color: var(--tooltip-text-color);
+    background: var(--tooltip-background-color);
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 1.4;
+    z-index: 100;
+    white-space: normal;
+    width: var(--tooltip-width);
+    max-width: var(--tooltip-width);
+  }
+  
+  /* CSS border triangles */
+  .Tooltip-Tip::before {
+    content: " ";
+    left: 50%;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: var(--tooltip-arrow-size);
+    margin-left: calc(var(--tooltip-arrow-size) * -1);
+  }
+  
+  /* Absolute positioning */
+  .Tooltip-Tip.top {
+    top: calc(var(--tooltip-margin) * -1);
+  }
+  /* CSS border triangles */
+  .Tooltip-Tip.top::before {
+    top: 100%;
+    border-top-color: var(--tooltip-background-color);
+  }
+  
+  /* Absolute positioning */
+  .Tooltip-Tip.right {
+    left: calc(100% + var(--tooltip-margin));
+    top: 50%;
+    transform: translateX(0) translateY(-50%);
+  }
+  /* CSS border triangles */
+  .Tooltip-Tip.right::before {
+    left: calc(var(--tooltip-arrow-size) * -1);
+    top: 50%;
+    transform: translateX(0) translateY(-50%);
+    border-right-color: var(--tooltip-background-color);
+  }
+  
+  /* Absolute positioning */
+  .Tooltip-Tip.bottom {
+    bottom: calc(var(--tooltip-margin) * -2);
+  }
+  /* CSS border triangles */
+  .Tooltip-Tip.bottom::before {
+    bottom: 100%;
+    border-bottom-color: var(--tooltip-background-color);
+  }
+  
+  /* Absolute positioning */
+  .Tooltip-Tip.left {
+    left: auto;
+    right: calc(100% + var(--tooltip-margin));
+    top: 50%;
+    transform: translateX(0) translateY(-50%);
+  }
+  /* CSS border triangles */
+  .Tooltip-Tip.left::before {
+    left: auto;
+    right: calc(var(--tooltip-arrow-size) * -2);
+    top: 50%;
+    transform: translateX(0) translateY(-50%);
+    border-left-color: var(--tooltip-background-color);
+  }
+
+  /* Raw Report New Tab Styles */
+  .rawReportContainer {
+    padding: 180px;
+  }
+  .topRightIllustration {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .leftIllustration {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+  }
+  .bottomRightIllustration {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    bottom: 0%;
+  }
+  .rawReportContainer h1 {
+    font-weight: 800;
+    margin-bottom: 32px;
+    width: 45%;
+  }
+  .metaDataContainer {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 24px;
+  }
+  .metaDataItem p:first-child {
+    font-family: "RobotoMono-Light", Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+  }
+  .metaDataItem p:last-child {
+    color: white;
+  }
+  .rawReportContents p {
+    color: white;
+    margin-top: 40px;
+  }
+
+  .TextAreaAndVedetteContainer {
+    padding-bottom: 40px;
+  }
+  .circle {
+    background-color: #222222;
+	border-radius: 100%;
+	margin: 10px;
+	height: 40px;
+	width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    float: right;
+  }
+  .circle img {
+    height: auto;
+	width: 60%;
+  }
+
+  .circle:hover {
+	box-shadow: 0 0 0 0 rgba(66, 133, 244, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+    cursor: pointer;
+  }
+
+ .circle-container {
+    background-color:#191919;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+ }
+ 
+  .popup {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    border-radius: 40px 0px 00px 40px;
+    padding-left: 16px;
+    padding-right: 24px;
+    position: relative;
+    right: -32px;
+    right: -40px;
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  .popup.visible {
+    right: -32px;
+    opacity: 1;
+}
+  .popup-text span {
+    font-size: 14px;
+    animation: jump 0.5s alternate infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4285F4;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+}
+  
+  @keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(66, 133, 244, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(66, 133, 244, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(66, 133, 244, 0);
+	}
+  }
+
+  .circle:active {
+    background-color: #272727;
+  }
+
+  /* Export Button */
+  .dropdown-menu {
+    position: absolute;
+    background-color: #202124;
+    border: 1px solid rgba(255, 255, 255, 0.7);;
+  }
+  .dropdown-menu div {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  }
+  .dropdown-menu div p {
+    margin: 0;
+    padding-left: 4px;
+    color: white;
+  }
+  .dropdown-menu div:hover {
+    cursor: pointer;
+    background-color: #323232;
+    transition: 0.3s ease-out;
+  }
+
+  @media only screen and (max-width: 1399px) {
+    .FormHeader, .FormBody, .reportTablePopUp, .reportComparisonPopup, .rawReportContainer {
+        display: none;
+    }
+    .lock-thumbnail {
+        width: 100%;
+    }
+    .FormLock {
+        padding-top: 10%;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: center;
+    }
+    .FormLock a h3 {
+        color: #4285F4;
+        text-decoration: underline;
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .FormLock a {
+        text-decoration: none;
+    }
+    .FormLock p {
+        padding-left: 10%;
+        padding-right: 10%;
+        line-height: 1.5rem;
+    }
+    .lock-footer {
+        margin-top: 60px;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .FormHeader, .FormBody, .reportTablePopUp, .reportComparisonPopup, .rawReportContainer {
+        display: default;
+    }
+    .FormLock {
+        display: none;
+    }
+  }
