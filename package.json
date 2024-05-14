@@ -1,0 +1,21 @@
+{
+  "name": "convergence-crew",
+  "version": "1.0.0",
+  "description": "There will be more information for collaborators about the project later on.",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm start",
+    "test": "echo 'Running tests...'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.5.0"
+  }
+}
