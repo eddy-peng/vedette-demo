@@ -57,8 +57,10 @@ const Form = (props) => {
 
             <div className="FormLock">
                 <h3>Vedette Locked 🔒</h3>
-                <h1>Move To A Larger Device 💻</h1>
-                <p>Due to scope and mobile limitations of the live bug reporting form, Vedette only works on laptop and desktop screens (display sizes 1400px and above)</p>
+                <h1>Your Screen Size Is Too Small 💻</h1>
+                <p>Due to scope and mobile limitations of the live bug reporting form, Vedette only works on laptop and desktop screens (display sizes 1400px and above).</p>
+                <p>Additinally, ensure that your browser is on 100% zoom size or less.</p>
+                <p>Aren't on a large enough screen? Feel free to watch Vedette's video demo!</p>
                 <a href="https://youtu.be/lXVBjWtMLxo" target="_blank">
                     <h3>YouTube Video Demo Link</h3>
                     <img className="lock-thumbnail" src={VideoThumbnail} alt="Final Video Demo Thumbnail" />

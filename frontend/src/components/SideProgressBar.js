@@ -69,6 +69,7 @@ const SideProgressBar = () => {
                 <div className="CheckBox NotThereYet"></div>
                 <h4>The cause</h4>
             </div>
+            <h3>Disclaimer: This is a static demo and connection to the AI has been disabled for security reasons. Broken links are intentional.</h3>
         </div>
     );
 };
