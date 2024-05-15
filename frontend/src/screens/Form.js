@@ -1,5 +1,6 @@
 import HorizontalLine from "../components/HorizontalLine.js";
-import TextEntryField from "../components/TextEntryField.js";
+import TextEntryFieldOne from "../components/TextEntryFieldOne.js";
+import TextEntryFieldTwo from "../components/TextEntryFieldTwo.js";
 import SideProgressBar from "../components/SideProgressBar.js";
 import { useEffect, useState } from "react";
 import VideoThumbnail from "../images/videoThumbnail.svg";
@@ -84,11 +85,11 @@ const Form = (props) => {
 
                     <h1>The problem</h1>
 
-                    <TextEntryField
+                    <TextEntryFieldOne
                         heading="Please describe the technical details of the vulnerability"
                         getField={handleAddFieldInfo}
                     />
-                    <TextEntryField
+                    <TextEntryFieldTwo
                         heading="Please briefly explain who can exploit the vulnerability, and what they gain
                         when doing so."
                         getField={handleAddFieldInfo}
