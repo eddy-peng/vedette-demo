@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import "./App.css";
 import Form from "./screens/Form";
 import ReportTable from "./screens/Report_Table";
@@ -13,6 +14,13 @@ function App() {
     const [reportContent, setReportContent] = useState({
         formPage: "The Problem",
     });
+
+    const { pathname } = useLocation();
+
+    // Scroll to the top whenever the location changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     const handleGetReportContent = async (fieldsList) => {
         try {

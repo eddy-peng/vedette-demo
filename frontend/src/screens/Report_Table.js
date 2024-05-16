@@ -1,4 +1,5 @@
-import ReportRow from "../components/ReportRow.js";
+import ReportRowInteractive from "../components/ReportRowInteractive.js";
+import ReportRowStatic from "../components/ReportRowStatic.js";
 import { Link } from "react-router-dom";
 import VideoThumbnail from "../images/videoThumbnail.svg";
 
@@ -46,7 +47,8 @@ export default function reportTable() {
                         </div>
                     </div>
                 </div>
-                <ReportRow />
+                <ReportRowInteractive />
+                <ReportRowStatic />
             </div>
         </div>
     );

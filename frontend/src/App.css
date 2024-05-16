@@ -483,7 +483,7 @@ textarea:focus {
     padding-right: 0px;
 }
 
-.reportRow {
+.reportRow, .reportRowStatic {
     color: #ffffff;
 }
 
@@ -491,7 +491,7 @@ textarea:focus {
     text-decoration: none;
 }
 
-.reportRow,
+.reportRow, .reportRowStatic,
 .headingsContainer {
     display: flex;
     flex-direction: horizontal;
@@ -504,6 +504,10 @@ textarea:focus {
     padding-bottom: 0.5rem;
     padding-right: 1rem;
     padding-left: 5rem;
+}
+
+.reportRowStatic {
+    cursor: auto;
 }
 
 .reportRow:hover {
@@ -530,6 +534,11 @@ textarea:focus {
 
 .reportTitle {
     font-size: 14px;
+}
+
+.pillContainer {
+    display: flex;
+    gap: 8px;
 }
 
 .reportPill {

@@ -1,0 +1,16 @@
+[
+    {
+        "reportID": 41495780,
+        "Title": "DevTools doesn't seem to file paths in sourceMappingUIRL comments",
+        "Severity": "S4",
+        "Priority": "P3",
+        "Created": "Jul 19, 2023 11:52PM",
+        "Status": "Obsolete",
+        "AttackVector": "Local",
+        "AttackVectorStr": "This bug loads a local file for the source map",
+        "MemoryAccessType": "Out-of-bound Read",
+        "MemoryAccessTypeStr": "Threat emerged via six-cylinder RAM exploration",
+        "ContextType": "Privelaged",
+        "ContextTypeStr": "Access to privileged|signature permissions."
+    }
+]

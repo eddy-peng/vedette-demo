@@ -1,9 +1,9 @@
 import React from "react";
 import "../App.css";
-import reportData from './Fake_Report_Data.json';
+import reportDataInteractive from './Fake_Report_Data_Interactive.json';
 import { Link } from "react-router-dom";
 
-export default function reportRow(props) {
+export default function ReportRowInteractive(props) {
     return (
         <div>
             <div className="pagination">
@@ -24,11 +24,11 @@ export default function reportRow(props) {
                 </div>
                 <h2 className="valueHeading">STATUS</h2>
                 <h2 className="valueHeading">ID</h2>
-                <h2 className="valueHeading">SEVERITY</h2>
+                <h2 className="valueHeading">CREATED</h2>
             </div>
 
 
-            {reportData.map((report) => (
+            {reportDataInteractive.map((report) => (
                 <Link className="reportRowContainer" to='comparison'>
                     <div className="reportRow" key={report.reportID}>
                         <div className="reportPercentContainer">
@@ -38,11 +38,14 @@ export default function reportRow(props) {
                         <div className="titlePillContainer">
                             <h1 className="reportTitle">{report.Title}</h1>
                             {/* Insert field name and similarlity percent value */}
-                            <div className="reportPill">Pill</div>
+                            <div className="pillContainer">
+                                <div className="reportPill">Description · 40%</div>
+                                <div className="reportPill">Technical · 21%</div>
+                            </div>
                         </div>
                         <h2 className="reportValue">{report.Status}</h2>
                         <h2 className="reportValue">{report.reportID}</h2>
-                        <h2 className="reportValue">{report.Severity}</h2>
+                        <h2 className="reportValue">{report.Created}</h2>
                     </div>
                 </Link>
             ))}
