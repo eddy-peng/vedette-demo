@@ -66,7 +66,7 @@ const SideProgressBar = () => {
                 <div className="CheckBox NotThereYet"></div>
                 <h4>The cause</h4>
             </div>
-            <h3>This is a static demo and connection to the AI has been disabled for security reasons. Broken links are intentional. Data is illustrative.</h3>
+            <h3>This is a demo, and the connection to the AI is disabled for security reasons. Broken links are intentional. The data is illustrative.</h3>
         </div>
     );
 };
