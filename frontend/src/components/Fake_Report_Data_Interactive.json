@@ -1,12 +1,12 @@
 [
     {
-        "reportID": 41495780,
-        "Title": "DevTools doesn't seem to file paths in sourceMappingUIRL comments",
-        "Severity": "S4",
-        "Priority": "P3",
-        "Created": "Jul 19, 2023 11:52PM",
+        "reportID": 41485950,
+        "Title": "Security: CRX3 File Signature Verification Bypass via Embedded ZIP64 Payload",
+        "Severity": "S1",
+        "Priority": "P1",
+        "Created": "Dec 20, 2023 02:13AM",
         "Status": "Obsolete",
-        "AttackVector": "Local",
+        "AttackVector": "Fixed",
         "AttackVectorStr": "This bug loads a local file for the source map",
         "MemoryAccessType": "Out-of-bound Read",
         "MemoryAccessTypeStr": "Threat emerged via six-cylinder RAM exploration",

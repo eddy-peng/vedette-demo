@@ -23,7 +23,7 @@ const SideProgressBar = () => {
                 </div>
 
                 {/* Insert the output main percentage below along with the similarity score scale. */}
-                <h4>60% - Highly Likely</h4>
+                <h4>84% - Very Likely</h4>
             </div>
             <div className="ListHeader">
                 <h3>REPORT PROGRESS</h3>
@@ -57,19 +57,16 @@ const SideProgressBar = () => {
             </div>
             <div className="ListItem">
                 <div className="CheckBox"></div>
-                <h4>The problem</h4>
-
-                {/* Uncomment the below blurb of code to add the section percentage for The problem and delete the above h4 */}
-                {/* <div className="SectionChecks">
+                <div className="SectionChecks">
                     <h4>The problem</h4>
-                    <h4>20%</h4>
-                </div> */}
+                    <h4>13%</h4>
+                </div>
             </div>
             <div className="ListItem">
                 <div className="CheckBox NotThereYet"></div>
                 <h4>The cause</h4>
             </div>
-            <h3>Disclaimer: This is a static demo and connection to the AI has been disabled for security reasons. Broken links are intentional.</h3>
+            <h3>This is a static demo and connection to the AI has been disabled for security reasons. Broken links are intentional. Data is illustrative.</h3>
         </div>
     );
 };

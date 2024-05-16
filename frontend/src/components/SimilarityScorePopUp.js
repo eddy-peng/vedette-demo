@@ -39,7 +39,7 @@ const SimilarityScorePopUp = () => {
                     </div> */}
 
                     {/* Code block below is for orange popup. Uncomment to show! */}
-                    <div className="ColorSign SignOrange">
+                    {/* <div className="ColorSign SignOrange">
                         <span class="material-icons">sentiment_dissatisfied</span>
                     </div>
                     <div>
@@ -48,10 +48,10 @@ const SimilarityScorePopUp = () => {
                     </div>
                     <div className="CloseIcon" onClick={handleClose}>
                         <span className="material-icons">close</span>
-                    </div>
+                    </div> */}
 
                     {/* Code block below is for red popup. Uncomment to show! */}
-                    {/* <div className="ColorSign SignRed">
+                    <div className="ColorSign SignRed">
                         <span class="material-icons">mood_bad</span>
                     </div>
                     <div>
@@ -60,7 +60,7 @@ const SimilarityScorePopUp = () => {
                     </div>
                     <div className="CloseIcon" onClick={handleClose}>
                         <span className="material-icons">close</span>
-                    </div> */}
+                    </div>
 
                 </div>
             )}

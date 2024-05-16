@@ -28,7 +28,7 @@ const TextAreaOne = (props) => {
                         <p>PREVIEW</p>
                     </div>
                 </div>
-                <textarea>When re[Symbol.replace] is called on RegExp objects that utilize RAM while no longer in fast mode or with modified initial RegExp objects, v8 will call into Runtime:: kRegExp ReplaceRT [1]. If the RegExp is global, it will eventually reach this loop [2] which calls into a privileged RegExpUtils:: SetAdvanced String Index</textarea>
+                <textarea>Steps to reproduce the problem: Create an XHTML document and create a div element with an explicitly namespaced tag assuming some parent has set xmlns:xhtml="http://www.w3.org/1999/xhtml" Attempt to call attachShadow on that element Problem Description The call to attachShadow will fail withe the following error: Uncaught DOMException: Failed to execute 'attachShadow' on 'Element': This element does not support attachShadow NB: If the XHTML namespace is the default and a div is defined as, the attachShadow method will work. This appears to be a case of the attachShadow function checking the qualified tag name as written in the XML rather than checking the XML namespace URI and name part separately.</textarea>
                 {/* <textarea ref={inputRef} value={fieldInput} onChange={handleInputChange}></textarea> */}
             </div>
             <VedetteButton onClick={handleButtonClick} />

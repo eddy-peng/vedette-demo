@@ -33,14 +33,14 @@ export default function ReportRowInteractive(props) {
                     <div className="reportRow" key={report.reportID}>
                         <div className="reportPercentContainer">
                             {/*  Insert similarlity percent value */}
-                            <p className="reportPercent">100%</p> 
+                            <p className="reportPercent">92%</p> 
                         </div>
                         <div className="titlePillContainer">
                             <h1 className="reportTitle">{report.Title}</h1>
                             {/* Insert field name and similarlity percent value */}
                             <div className="pillContainer">
-                                <div className="reportPill">Description · 40%</div>
-                                <div className="reportPill">Technical · 21%</div>
+                                <div className="reportPill">Description · 12%</div>
+                                <div className="reportPill">Technical · 75%</div>
                             </div>
                         </div>
                         <h2 className="reportValue">{report.Status}</h2>

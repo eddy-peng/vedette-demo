@@ -21,7 +21,7 @@ export default function reportTable() {
                     <div className="totalContainer">
                         <div className="valueHeading">TOTAL</div>
                         {/* Insert total calcualted percentage below */}
-                        <div className="totalPercent">80%</div>
+                        <div className="totalPercent">84%</div>
                     </div>
                     <div className="headerContainer">
                         <div className="tableOverview">
