@@ -8,7 +8,7 @@ const FieldComparisonDesc = (props) => {
                 </div>
                 <div className="fieldDescription">
                     <text>SIMILARITY</text>
-                    <h1>48% · Likely</h1>
+                    <h1>12% · Likely</h1>
                 </div>
             </div>
             <div>
@@ -16,11 +16,11 @@ const FieldComparisonDesc = (props) => {
                     <div className="comparedReport submittedReport">
                         <h2>Your Report</h2>
                         {/* <text>{props.userFieldText}</text> */}
-                        <text>When re[Symbol.replace] is called on <mark className="blueHighlight">RegExp objects that utilize RAM</mark> while no longer in fast mode or with modified initial RegExp <mark className="pinkHighlight">objects, v8 will call into Runtime:: kRegExp</mark> ReplaceRT [1]. If the RegExp is global, it will eventually reach this loop [2] which calls into a <mark className="greenHighlight">privileged RegExpUtils:: SetAdvanced String Index</mark></text>
+                        <text>Element.attachShadow reported as unsupported for div with <mark className="blueHighlight">explicit XML namespace</mark> name. The call to attachShadow will fail withe the following error: <mark className="pinkHighlight">Uncaught DOMException</mark>: Failed to execute <mark className="greenHighlight">'attachShadow' on 'Element'</mark>: This element does not support attachShadow</text>
                     </div>
                     <div className="comparedReport historicalReport">
-                        <h2>Report ID: 1234567</h2>
-                        <text>When re[Symbol.replace] is called on <mark className="blueHighlight">RegExp objects that utilize RAM</mark> while no longer in fast mode or with modified initial RegExp <mark className="pinkHighlight">objects, v8 will call into Runtime:: kRegExp</mark> ReplaceRT [1]. If the RegExp is global, it will eventually reach this loop [2] which calls into a <mark className="greenHighlight">privileged RegExpUtils:: SetAdvanced String Index</mark></text>
+                        <h2>Report ID: 41485950</h2>
+                        <text>A vulnerability has been found in <mark className="pinkHighlight">Google Chrome's CRX3 file signature validation</mark>, which would allow an attacker to embed their <mark className="greenHighlight">own malicious payload</mark> inside a legitimate <mark className="blueHighlight">CRX extension</mark> with a valid signature and key.</text>
                     </div>
                 </div>
             </div>

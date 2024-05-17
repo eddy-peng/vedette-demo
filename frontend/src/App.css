@@ -653,6 +653,7 @@ textarea:focus {
 .tableOverview h1 {
     font-size: 44px;
     margin-top: 0px;
+    max-width: 80%;
 }
 
 .tableOverview p {

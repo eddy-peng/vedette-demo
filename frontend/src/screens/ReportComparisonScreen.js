@@ -108,11 +108,11 @@ const ReportComparisonScreen = () => {
                         <div className="totalContainer">
                             <div className="valueHeading">OVERALL</div>
                             {/* Insert total calcualted percentage below */}
-                            <div className="totalPercent">60%</div>
+                            <div className="totalPercent">92%</div>
                         </div>
                         <div className="tableOverview">
                             <div>
-                                <h1>Remove "password" from turn off synch screen</h1>
+                                <h1>Security: CRX3 File Signature Verification Bypass via Embedded ZIP64 Payload</h1>
                                 <p>
                                     {" "}
                                     Explore how each field of your current form compares to this historical report based on three attributes. 
