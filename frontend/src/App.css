@@ -960,6 +960,7 @@ textarea:focus {
   /* Raw Report New Tab Styles */
   .rawReportContainer {
     padding: 180px;
+    height: 100%;
   }
   .topRightIllustration {
     position: absolute;
@@ -974,9 +975,9 @@ textarea:focus {
   }
   .bottomRightIllustration {
     position: absolute;
+    bottom: -1000;
     right: 0;
-    top: 100%;
-    bottom: 0%;
+    margin: 0;
   }
   .rawReportContainer h1 {
     font-weight: 800;
